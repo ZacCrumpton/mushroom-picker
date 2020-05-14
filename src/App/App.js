@@ -1,7 +1,16 @@
 import React from 'react';
 import './App.scss';
+import mushroomData from '../helpers/data/mushroomData';
 
 class App extends React.Component {
+  // outside the render
+
+
+  componentDidMount() {
+    const mushrooms = mushroomData.getMushrooms();
+    console.error('mushrooms', mushrooms);
+  }
+
   render() {
     return (
       <div className="App">
