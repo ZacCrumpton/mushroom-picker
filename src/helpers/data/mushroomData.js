@@ -203,4 +203,8 @@ const mushrooms = [
 
 const getMushrooms = () => mushrooms;
 
-export default { getMushrooms };
+const basket = [];
+
+const getBasket = () => basket;
+
+export default { getMushrooms, getBasket };
