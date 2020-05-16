@@ -7,6 +7,7 @@ class App extends React.Component {
   // outside the render
   state = {
     mushrooms: [],
+    basket: [],
   }
 
   componentDidMount() {
@@ -20,7 +21,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <h2>MUSHROOM PICKERS</h2>
-        <Forest mushrooms={mushrooms}/>
+        <div className="d-flex flex-wrap">
+          <div>
+            <Forest mushrooms={mushrooms}/>
+            {
+              // <Forest mushrooms={mushrooms} basket={basket}/>
+            }
+          </div>
+        </div>
       </div>
     );
   }
